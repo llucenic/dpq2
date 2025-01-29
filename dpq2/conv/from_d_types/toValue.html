@@ -211,6 +211,16 @@ document.getElementById('symbolSearchPane').style.display = 'block';</script>
 								Function <code>toValue</code>
 							</a>
 						</li>
+						<li>
+							<a href="#15">
+								Function <code>toValue</code>
+							</a>
+						</li>
+						<li>
+							<a href="#16">
+								Function <code>toValue</code>
+							</a>
+						</li>
 					</ul>
 				</nav><h2 id="0">Function toValue</h2><p>Converts Nullable!T to Value
 </p>
@@ -456,6 +466,34 @@ See also: PostgreSQL's "lc_monetary" description and "money" package description
 				<span class="pun">)</span>
 				<br/>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="typ">Unqual</span><span class="pun">!</span><span class="pln">T </span><span class="pun">== </span><span class="typ">Json</span><span class="pun">)</span><span class="pun">);</span>
+						</div>
+					</code>
+				</div>
+				<h2 id="15">Function toValue</h2><p>Constructs Value from Ranges
+</p>
+				<div class="prototype">
+					<code class="lang-d">
+						<div class="single-prototype">
+				<a href="../../../dpq2/value/Value.html"><span class="typ">Value</span></a> <span class="pln">toValue</span>(R)<span class="pun">(</span>
+				<br/>&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">r</span>
+				<br/>
+				<span class="pun">)</span>
+				<br/>
+				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">__traits</span><span class="pun">(</span><span class="pln">isSame</span><span class="pun">, </span><span class="typ">TemplateOf</span><span class="pun">!</span><span class="pln">R</span><span class="pun">, </span><span class="typ">Range</span><span class="pun">)</span><span class="pun">);</span>
+						</div>
+					</code>
+				</div>
+				<h2 id="16">Function toValue</h2><p>Constructs Value from Multiranges
+</p>
+				<div class="prototype">
+					<code class="lang-d">
+						<div class="single-prototype">
+				<a href="../../../dpq2/value/Value.html"><span class="typ">Value</span></a> <span class="pln">toValue</span>(M)<span class="pun">(</span>
+				<br/>&nbsp;&nbsp;<span class="pln">M</span> <span class="pln">m</span>
+				<br/>
+				<span class="pun">)</span>
+				<br/>
+				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">__traits</span><span class="pun">(</span><span class="pln">isSame</span><span class="pun">, </span><span class="typ">TemplateOf</span><span class="pun">!</span><span class="pln">M</span><span class="pun">, </span><span class="typ">MultiRange</span><span class="pun">)</span><span class="pun">);</span>
 						</div>
 					</code>
 				</div>
